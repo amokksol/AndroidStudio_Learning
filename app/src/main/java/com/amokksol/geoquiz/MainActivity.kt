@@ -2,6 +2,7 @@ package com.amokksol.geoquiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -18,11 +19,12 @@ class MainActivity : AppCompatActivity() {
         falseButton = findViewById(R.id.false_button)
         //создаем действие на нажатие
         trueButton.setOnClickListener { view: View ->
-            Toast.makeText(
+            var toast1 = Toast.makeText(
                 this,
                 R.string.correct_toast,
                 Toast.LENGTH_SHORT)
-                .show()
+                toast1.show()
+                toast1.setGravity(Gravity.TOP,0,0)
 
 
 
@@ -30,11 +32,12 @@ class MainActivity : AppCompatActivity() {
         }
         falseButton.setOnClickListener { view: View ->
             //код выполнение - после нажатия -> уведомление
-            Toast.makeText(
+            var toast = Toast.makeText(
                 this,
                 R.string.incorrect_toast,
                 Toast.LENGTH_SHORT)
-                .show()
+                toast.show()
+                toast.setGravity(Gravity.TOP,0,0)
 
 
         }
