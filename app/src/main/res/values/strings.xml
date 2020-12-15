@@ -5,6 +5,7 @@
     <string name="correct_toast"> Правильно </string>
     <string name="incorrect_toast"> Неправильно </string>
     <string name="next_button">Next</string>
+    <string name="back_button">Back</string>
     <string name="question_oceans"> Тихий океан больше Антлатического?</string>
     <string name="question_australia"> Каннбера столица Австралии? </string>
     <string name="question_mideast">Суэцкий канал соединяет Крансое море и Индийский океан?</string>
